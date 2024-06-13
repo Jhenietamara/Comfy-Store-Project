@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/comfy_store.css">
+    <title>Comfy Store</title>
+    <link rel="shortcut icon" href="Images/vite.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a9ae2d9c34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="register">
+                <a href="signin.html">Sign in / Guest</a>
+                <a href="register.html">Create Account</a>
+            </div>
+
+        </div>
+        
+    </header>
+    <nav>
+        <div class="inner-nav container">
+           
+            <div class="navbar-start">
+
+                <div class="dropdown">
+                    <button class="hamburger-btn openMenu">
+                        <img class="hamburger" src="Images/hamburger.svg" alt="">
+                    </button>
+    
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="comfy_store_home.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a class="active"  href="product.html">Products</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+
+                <div class="logo-bg">
+                    <a href="#">C</a>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <ul class="nav-menu">
+                    <li><a  href="comfy_store_home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="product.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="nav-icons">
+                    <i class="fa-solid fa-moon"></i>
+                    <a class="btn-circle btn-ghost" href="cart.html">
+                        <img src="Images/cart.svg" alt="">
+                   </a>
+                    
+                </div>
+
+                <span class="cart-number">0</span>
+    
+            </div>
+        </div>
+       
+    </nav>
+
+    <section class="container product-click">
+        <div class="breadcrumbs">
+            <ul>
+                <li>
+                    <a href="comfy_store_home.html">Home</a>
+                </li>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <li class="li-2">
+                    <a href="product.html">Products</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="prod-info-grid">
+            <!-- <div>
+             <img src="Images/lantern.jpeg" alt=""> 
+            </div>
+            
+
+            <div class="prod-info">
+                <h1>Avant-Garde Lamp</h1>
+                <h4 class="brand-name">Modenza</h4>
+                <p class="click-price">$179.99</p>
+                <p class="info-text">
+                    Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+               
+                </p>
+
+                <div class="color-selection">
+                    <h4>colors</h4>
+        
+                    <div class="color-buttons">
+                        <button class="color-btn1" type="button"></button>
+                        <button class="color-btn2" type="button"></button>
+                    </div>
+                </div>
+
+                <div class="form-control amount-div">
+                    <label class="label" for="amount">
+                    <h4 class="amount">amount</h4>
+                    </label>
+                    <select class="amount-select" id="amount">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+              </div>
+
+              <div class="bag-div">
+                <button class="btn" type="button">Add to bag</button>
+              </div>
+            </div> -->
+
+            
+        </div>
+
+    </section>
+
+
+    <div class="item-alert item-added">
+        <img class="cancel" src="Images/X-mark.png" alt="">
+
+        <div class="check-text">
+            <img src="Images/check-mark.png" alt="">
+            <p>Item added</p>
+        </div>
+
+        <div class="progress-bar"></div>
+    </div>
+    
+
+
+    <script src="js/prod-details.js"></script>
+</body>
+</html>

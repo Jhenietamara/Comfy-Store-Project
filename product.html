@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfy Store</title>
+    <link rel="shortcut icon" href="Images/vite.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/comfy_store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://kit.fontawesome.com/a9ae2d9c34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="register">
+                <a href="signin.html">Sign in / Guest</a>
+                <a href="register.html">Create Account</a>
+            </div>
+
+        </div>
+        
+    </header>
+    <nav>
+        <div class="inner-nav container">
+           
+            <div class="navbar-start">
+
+                <div class="dropdown">
+                    <button class="hamburger-btn openMenu">
+                        <img class="hamburger" src="Images/hamburger.svg" alt="">
+                    </button>
+    
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="comfy_store_home.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a class="active"  href="product.html">Products</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+
+                <div class="logo-bg">
+                    <a href="#">C</a>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <ul class="nav-menu">
+                    <li><a  href="comfy_store_home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active" href="product.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="nav-icons">
+                    <i class="fa-solid fa-moon"></i>
+                    <a class="btn-circle btn-ghost" href="#">
+                        <img src="Images/cart.svg" alt="">
+                   </a>
+                    
+                </div>
+
+                <span class="cart-number">0</span>
+    
+            </div>
+        </div>
+       
+    </nav>
+   
+
+    <section class="products-sect container">
+
+        <form class="product-form" action="" method="get">
+
+            <div class="form-control">
+                <label for="search" class="label">
+                    <span class="label-text ">search product</span>
+                </label>
+
+                <input type="search" name="search" class="inputss search-input" value="">
+            </div>
+
+
+            <div class="form-control">
+                <label for="category" class="label">
+                  <span class="label-text">
+                    select category
+                  </span>
+                </label>
+                <select name="category" id="category" class="select inputss">
+                    <option value="all">all</option>
+                    <option value="Table">Tables</option>
+                    <option value="Chair">Chairs</option>
+                    <option value="Kids">Kids</option>
+                    <option value="Sofa">Sofas</option>
+                    <option value="Bed">Beds</option>
+                </select>
+            </div>
+
+
+            <div class="form-control">
+                <label for="company" class="label">
+                    <span class="label-text">
+                        select company
+                    </span>
+                </label>
+                <select name="company" id="company" class="select inputss">
+                    <option value="all">all</option>
+                    <option value="Modenza">Modenza</option>
+                    <option value="Luxora">Luxora</option>
+                    <option value="Artifex">Artifex</option>
+                    <option value="Comfora">Comfora</option>
+                    <option value="Homestead">Homestead</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="order" class="label">
+                    <span class="label-text">
+                        sort by
+                    </span>
+                </label>
+                <select name="order" id="order" class="select inputss">
+                    <option value="a-z">a-z</option>
+                    <option value="z-a">z-a</option>
+                    <option value="high">high</option>
+                    <option value="low">low</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="price" class="label">
+                    <span class="label-text"> select price</span>
+                    <span class="range-limit-num" id="range-preview">$1,000.00</span>
+                </label>
+                <input type="range" name="price" id="price" min="0" max="1000" class="price-range" step="1" value="1000">
+                <div class="range-bottom">
+                    <span class="font-bold text-md">0</span>
+                    <span class="font-bold text-md">Max : $1,000.00</span>
+            
+                </div>
+            </div>
+
+
+            <div class="form-control shipping-div">
+                <label for="shipping" class="label">
+                    <span class="label-text">
+                        free shipping
+                    </span>
+                </label>
+                <!-- <input type="checkbox" name="shipping" class="shipping-checkbox checkbox"> -->
+
+                <input type="checkbox" name="shipping" id="shipping-checkbox">
+           </div>
+
+
+           <button type="submit" class="btn search-btn">search</button>
+
+           <!-- <a href="#" class="btn reset">reset</a> -->
+           <input type="reset" class="btn reset" value="Reset">
+
+        </form>
+
+
+        <div class="prod-list-grid">
+            <h4 id="cart-length">
+                22
+                Products
+            </h4>
+
+            <div class="list-grid">
+               <button type="button" class="btn-circle btn grid-btn">
+                <i class="fa-solid fa-table-cells grid-img"></i>
+               </button>
+               <button type="button" class="btn-circle btn btn-ghost listBtn">
+                <i class="fa-solid fa-list"></i>
+               </button>
+            </div>
+        </div>
+
+
+        <div class="featured-grid">
+            <!-- <a href="#" class="card">
+                <figure >
+                    <img class="card-image" src="Images/lantern.jpeg" alt="">
+                </figure>
+                
+
+                <div class="item-details">
+                    <h2 class="product-name">Avant-Garde Lamp</h2>
+                    <span class="price">$179.99</span>
+                </div>
+            </a> -->
+        </div>
+
+
+        <div class="featured-list">
+            <!-- <a href="#" class="list-card">
+                <img class="list-img" src="Images/lantern.jpeg" alt="">
+                <div class="list-item-details">
+                    <h3>avant-garde lamp</h3>
+                    <h4>Modenza</h4>
+                </div>
+
+                <p class="list-price">$179.99</p>
+            </a> -->
+        </div>
+
+
+
+        <div class="pagination">
+
+            <div class="page-num">
+                <button class="prev-btn">PREV</button>
+                <div class="page-numbers">
+                </div>
+                
+                <button class="next-btn">NEXT</button> 
+            </div>
+           
+        </div>
+
+    </section>
+    
+
+
+
+
+    <script src="js/product.js"></script>
+</body>
+</html>
